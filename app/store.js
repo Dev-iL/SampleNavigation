@@ -6,6 +6,7 @@ import logger from 'redux-logger'
 
 // Navigation
 import { NavigatorTabOne } from './tabOne/navigationConfiguration'
+import { NavigatorTabOneScreenTwo } from './tabOne/views/tabOneScreenTwo/navigationConfiguration'
 import { NavigatorTabTwo } from './tabTwo/navigationConfiguration'
 import { NavigatorTabThree } from './tabThree/navigationConfiguration'
 import { TabBar, tabBarReducer } from './tabBar/navigationConfiguration'
@@ -20,6 +21,8 @@ export default createStore(
     tabBar: tabBarReducer,
 
     tabOne: (state,action) => NavigatorTabOne.router.getStateForAction(action,state),
+
+    tabOneScreenTwo: (state,action) => NavigatorTabOneScreenTwo.router.getStateForAction(action,state),
 
     tabTwo: (state,action) => NavigatorTabTwo.router.getStateForAction(action,state),
 

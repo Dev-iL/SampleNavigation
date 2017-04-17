@@ -1,10 +1,10 @@
 "use strict";
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-export default class TabOneScreenOne extends React.Component {
+export default class TabOneScreenThree extends React.Component {
   static navigationOptions = {
     tabBar: {
-      label: "Tab One"
+      label: "Tab Three"
     }
   };
 
@@ -13,23 +13,24 @@ export default class TabOneScreenOne extends React.Component {
       <View
         style={{
           flex: 1,
-          backgroundColor: "red",
+          backgroundColor: "green",
           alignItems: "center",
           justifyContent: "center"
         }}
       >
-        <Text>{"Tab One Screen One"}</Text>
-        <TouchableOpacity
-          onPress={() => this.props.navigation.navigate("TabOneScreenTwo")}
+        <Text>{"Tab One Screen Three"}</Text>
+        {/*<TouchableOpacity
+          onPress={() => this.props.navigation.goBack()}
           style={{
             padding: 20,
             borderRadius: 20,
-            backgroundColor: "yellow",
+            backgroundColor: "purple",
             marginTop: 20
           }}
         >
-          <Text>{"Go to next screen this tab"}</Text>
-        </TouchableOpacity>
+          <Text>{"Go back a screen this tab"}</Text>
+        </TouchableOpacity>*/}
+
       </View>
     );
   }

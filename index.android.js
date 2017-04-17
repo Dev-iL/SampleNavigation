@@ -1,19 +1,19 @@
-'use strict'
+"use strict";
 // React
-import React from 'react'
-import { AppRegistry } from 'react-native'
+import React from "react";
+import { AppRegistry } from "react-native";
 // Redux
-import { Provider } from 'react-redux'
-import store from './app/store'
+import { Provider } from "react-redux";
+import store from "./app/store";
 // Navigation
-import TabBarNavigation from './app/tabBar/views/TabBarNavigation'
+import TabBarNavigation from "./app/tabBar/views/TabBarNavigation";
 class SampleNavigation extends React.Component {
-  render(){
-    return(
+  render() {
+    return (
       <Provider store={store}>
         <TabBarNavigation />
       </Provider>
-    )
+    );
   }
 }
-AppRegistry.registerComponent('SampleNavigation', () => SampleNavigation)
+AppRegistry.registerComponent("SampleNavigation", () => SampleNavigation);
