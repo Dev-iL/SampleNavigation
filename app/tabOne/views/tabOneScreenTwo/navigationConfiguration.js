@@ -3,27 +3,22 @@
 import { StackNavigator, TabNavigator, TabView } from 'react-navigation'
 
 // Screens
-import Day1 from './tabs/Day1'
-import Day2 from './tabs/Day2'
-import Day3 from './tabs/Day3'
-import Day4 from './tabs/Day4'
-import Day5 from './tabs/Day5'
-import Day6 from './tabs/Day6'
+import TabOneScreenTwoTabOne from './views/TabOneScreenTwoTabOne'
+import TabOneScreenTwoTabTwo from './views/tabOneScreenTwoTabTwo/views/TabOneScreenTwoTabTwoNavigation'
+import TabOneScreenTwoTabThree from './views/TabOneScreenTwoTabThree'
 
 const routeConfiguration = {
-  Day1: { screen: Day1 },
-  Day2: { screen: Day2 },
-  Day3: { screen: Day3 },
-  Day4: { screen: Day4 },
-  Day5: { screen: Day5 },
-  Day6: { screen: Day6 },
+  TabOneScreenTwoTabOne: { screen: TabOneScreenTwoTabOne },
+  TabOneScreenTwoTabTwo: { screen: TabOneScreenTwoTabTwo },
+  TabOneScreenTwoTabThree: { screen: TabOneScreenTwoTabThree },
 }
 
 const tabNavigatorConfiguration = {
   // headerMode: 'none',
-  initialRoute: 'Day1',
+  initialRoute: 'TabOneScreenTwoTabOne',
   tabBarComponent: TabView.TabBarTop,
   tabBarPosition: 'top',
+  swipeEnabled: false,
   // backBehavior: 'none',
 }
 

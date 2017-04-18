@@ -5,7 +5,7 @@ import React from 'react'
 
 // Navigation
 import { addNavigationHelpers } from 'react-navigation'
-import { NavigatorTabOne } from '../navigationConfiguration'
+import { NavigatorTabOneScreenTwoTabTwo } from '../navigationConfiguration'
 
 // Redux
 import { connect } from 'react-redux'
@@ -13,25 +13,24 @@ import { connect } from 'react-redux'
 // Icon
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-
 const mapStateToProps = (state) => {
  return {
-  navigationState: state.tabOne
+    navigationState: state.tabOneScreenTwoTabTwo
   }
 }
 
-class TabOneNavigation extends React.Component {
+class TabOneScreenTwoTabTwoNavigation extends React.Component {
   static navigationOptions = {
     tabBar:{
-      label: 'Tab One',
-      icon: ({ tintColor }) => <Icon size={ 20 } name={ 'cogs' } color={ tintColor }/>
+      label: 'Days',
+      // icon: ({ tintColor }) => <Icon size={ 20 } name={ 'cogs' } color={ tintColor }/>
     }
   }
 
   render(){
     const { navigationState, dispatch } = this.props
     return (
-      <NavigatorTabOne
+      <NavigatorTabOneScreenTwoTabTwo
         navigation={
           addNavigationHelpers({
             dispatch: dispatch,
@@ -42,4 +41,4 @@ class TabOneNavigation extends React.Component {
     )
   }
 }
-export default connect(mapStateToProps)(TabOneNavigation)
+export default connect(mapStateToProps)(TabOneScreenTwoTabTwoNavigation)

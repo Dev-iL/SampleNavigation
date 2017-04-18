@@ -5,8 +5,9 @@ import { applyMiddleware, combineReducers, createStore } from 'redux'
 import logger from 'redux-logger'
 
 // Navigation
-import { NavigatorTabOne } from './tabOne/navigationConfiguration'
+import { NavigatorTabOneStack } from './tabOne/navigationConfiguration'
 import { NavigatorTabOneScreenTwo } from './tabOne/views/tabOneScreenTwo/navigationConfiguration'
+import { NavigatorTabOneScreenTwoTabTwo } from './tabOne/views/tabOneScreenTwo/views/tabOneScreenTwoTabTwo/navigationConfiguration.js'
 import { NavigatorTabTwo } from './tabTwo/navigationConfiguration'
 import { NavigatorTabThree } from './tabThree/navigationConfiguration'
 import { NavigatorTabFour } from './tabFour/navigationConfiguration'
@@ -27,9 +28,11 @@ export default createStore(
 
     tabBar: tabBarReducer,
 
-    tabOne: (state,action) => NavigatorTabOne.router.getStateForAction(action,state),
+    tabOneStack: (state,action) => NavigatorTabOneStack.router.getStateForAction(action,state),
 
-    tabOneScreenTwo: (state,action) => NavigatorTabOneScreenTwo.router.getStateForAction(action,state),
+    tabOneScreenTwoTabs: (state,action) => NavigatorTabOneScreenTwo.router.getStateForAction(action,state),
+
+    tabOneScreenTwoTabTwo: (state,action) => NavigatorTabOneScreenTwoTabTwo.router.getStateForAction(action,state),
 
     tabTwo: (state,action) => NavigatorTabTwo.router.getStateForAction(action,state),
 

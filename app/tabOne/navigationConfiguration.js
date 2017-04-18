@@ -1,25 +1,20 @@
 'use strict'
 
-import { StackNavigator, TabNavigator, TabView } from 'react-navigation'
+import { StackNavigator } from 'react-navigation'
 
 // Screens
 import TabOneScreenOne from './views/TabOneScreenOne'
-import TabOneScreenTwo from './views/tabOneScreenTwo/TabOneScreenTwoNavigation'
-import TabOneScreenThree from './views/TabOneScreenThree'
+import TabOneScreenTwoNavigation from './views/tabOneScreenTwo/views/TabOneScreenTwoNavigation'
 
 const routeConfiguration = {
   TabOneScreenOne: { screen: TabOneScreenOne },
-  TabOneScreenTwo: { screen: TabOneScreenTwo },
-  TabOneScreenThree: { screen: TabOneScreenThree },
+  TabOneScreenTwo: { screen: TabOneScreenTwoNavigation },
+}
+// going to disable the header for now
+
+const stackNavigatorConfiguration = {
+  headerMode: 'screen', // <-- should allow you to change the styles of the header
+  initialRoute: 'TabOneScreenOne'
 }
 
-const tabNavigatorConfiguration = {
-  // headerMode: 'none',
-  initialRoute: 'TabOneScreenOne',
-  tabBarComponent: TabView.TabBarTop,
-  tabBarPosition: 'top',
-  swipeEnabled: false,
-  // backBehavior: 'none',
-}
-
-export const NavigatorTabOne = TabNavigator(routeConfiguration,tabNavigatorConfiguration)
+export const NavigatorTabOneStack = StackNavigator(routeConfiguration,stackNavigatorConfiguration)

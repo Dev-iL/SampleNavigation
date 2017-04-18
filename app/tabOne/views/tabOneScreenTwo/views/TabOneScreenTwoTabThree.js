@@ -1,7 +1,7 @@
 "use strict";
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-export default class TabOneScreenThree extends React.Component {
+export default class TabOneScreenTwoTabThree extends React.Component {
   static navigationOptions = {
     tabBar: {
       label: "Cat"
@@ -18,7 +18,7 @@ export default class TabOneScreenThree extends React.Component {
           justifyContent: "center"
         }}
       >
-        <Text>{"Tab One Screen Three"}</Text>
+        <Text>{"Tab One Screen Two Tab Three"}</Text>
         {/*<TouchableOpacity
           onPress={() => this.props.navigation.goBack()}
           style={{
