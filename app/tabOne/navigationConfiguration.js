@@ -18,6 +18,7 @@ const tabNavigatorConfiguration = {
   initialRoute: 'TabOneScreenOne',
   tabBarComponent: TabView.TabBarTop,
   tabBarPosition: 'top',
+  swipeEnabled: false,
   // backBehavior: 'none',
 }
 

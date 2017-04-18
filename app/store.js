@@ -9,7 +9,11 @@ import { NavigatorTabOne } from './tabOne/navigationConfiguration'
 import { NavigatorTabOneScreenTwo } from './tabOne/views/tabOneScreenTwo/navigationConfiguration'
 import { NavigatorTabTwo } from './tabTwo/navigationConfiguration'
 import { NavigatorTabThree } from './tabThree/navigationConfiguration'
+import { NavigatorTabFour } from './tabFour/navigationConfiguration'
+
 import { TabBar, tabBarReducer } from './tabBar/navigationConfiguration'
+
+import { StackRoot } from './stackRoot/navigationConfiguration'
 
 // Middleware
 const middleware = () => {
@@ -18,6 +22,9 @@ const middleware = () => {
 
 export default createStore(
   combineReducers({
+
+    stackRoot: (state,action) => StackRoot.router.getStateForAction(action,state),
+
     tabBar: tabBarReducer,
 
     tabOne: (state,action) => NavigatorTabOne.router.getStateForAction(action,state),
@@ -27,6 +34,9 @@ export default createStore(
     tabTwo: (state,action) => NavigatorTabTwo.router.getStateForAction(action,state),
 
     tabThree: (state,action) => NavigatorTabThree.router.getStateForAction(action,state),
+
+    tabFour: (state,action) => NavigatorTabFour.router.getStateForAction(action,state),
+
   }),
   middleware(),
 )
