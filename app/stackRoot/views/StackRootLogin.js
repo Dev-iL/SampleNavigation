@@ -1,14 +1,7 @@
 "use strict";
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-export default class StackRootLoading extends React.Component {
-
-  componentDidMount() {
-    setTimeout(() => {
-        this.props.navigation.navigate("StackRootLogin");
-    }, 2000);
-  }
-
+export default class StackRootLogin extends React.Component {
   render() {
     return (
       <View
@@ -19,9 +12,9 @@ export default class StackRootLoading extends React.Component {
           justifyContent: "center"
         }}
       >
-        <Text>{"Loading Screen"}</Text>
+        <Text>{"Login Screen"}</Text>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate("StackRootLogin")}
+          onPress={() => this.props.navigation.navigate("TabBarNavigation")}
           style={{
             padding: 20,
             borderRadius: 20,
@@ -29,7 +22,7 @@ export default class StackRootLoading extends React.Component {
             marginTop: 20
           }}
         >
-          <Text>{"End Loading"}</Text>
+          <Text>{"Login"}</Text>
         </TouchableOpacity>
 
       </View>

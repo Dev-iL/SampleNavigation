@@ -3,9 +3,11 @@ import { StackNavigator } from "react-navigation";
 // Tab-Navigators
 import TabBarNavigation from "../tabBar/views/TabBarNavigation";
 import StackRootLoading from "./views/StackRootLoading";
+import StackRootLogin from "./views/StackRootLogin";
 
 const routeConfiguration = {
   StackRootLoading: { screen: StackRootLoading },
+  StackRootLogin: { screen: StackRootLogin },
   TabBarNavigation: { screen: TabBarNavigation }
 };
 

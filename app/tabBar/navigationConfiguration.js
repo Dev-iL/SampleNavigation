@@ -17,6 +17,7 @@ const tabBarConfiguration = {
   tabBarComponent: TabView.TabBarBottom,
   tabBarPosition: 'bottom',
   swipeEnabled: false,
+  initialRoute: 'TabOneNavigation',
   //...other configs
   tabBarOptions: {
     // tint color is passed to text and icons (if enabled) on the tab bar

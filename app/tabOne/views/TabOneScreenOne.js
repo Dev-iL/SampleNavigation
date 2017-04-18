@@ -4,9 +4,13 @@ import { View, Text, TouchableOpacity } from "react-native";
 export default class TabOneScreenOne extends React.Component {
   static navigationOptions = {
     tabBar: {
-      label: "Tab One"
+      label: "Dog"
     }
   };
+
+  // componentDidMount() {
+  //   console.log("Hi there");
+  // }
 
   render() {
     return (
