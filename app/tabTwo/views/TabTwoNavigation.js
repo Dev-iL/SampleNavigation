@@ -22,7 +22,7 @@ class TabTwoNavigation extends React.Component {
   };
 
   render(){
-    const { dispatch, navigationState} = this.props
+    const { dispatch, navigationState} = this.props;
     return (
       <NavigatorTabTwo
         navigation={

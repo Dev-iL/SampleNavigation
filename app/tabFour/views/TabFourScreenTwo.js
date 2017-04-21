@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 export default class TabFourScreenTwo extends React.Component {

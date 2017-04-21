@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // React
 import React from 'react'
 // Navigation
@@ -22,7 +22,7 @@ class TabThreeNavigation extends React.Component {
   };
 
   render(){
-    const { dispatch, navigationState} = this.props
+    const { dispatch, navigationState} = this.props;
     return (
       <NavigatorTabThree
         navigation={addNavigationHelpers({

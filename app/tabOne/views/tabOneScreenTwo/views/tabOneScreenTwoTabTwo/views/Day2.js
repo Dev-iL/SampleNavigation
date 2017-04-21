@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 export default class Day2 extends React.Component {
   static navigationOptions = {
-    tabBarLbel: "Day 2"
+    tabBarLabel: "Day 2"
   };
 
   render() {

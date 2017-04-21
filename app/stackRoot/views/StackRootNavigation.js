@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // React
 import React from 'react'
@@ -14,12 +14,12 @@ const mapStateToProps = (state) => {
  return {
   navigationState: state.stackRoot,
   }
-}
+};
 
 class StackRootNavigation extends React.Component {
 
   render(){
-    const { dispatch, navigationState } = this.props
+    const { dispatch, navigationState } = this.props;
     return (
       <StackRoot
         navigation={

@@ -18,4 +18,4 @@ const stackNavigatorConfiguration = {
   initialRoute: 'TabTwoScreenOne'
 };
 
-export const NavigatorTabTwo = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
+export const NavigatorTabTwo = StackNavigator(routeConfiguration,stackNavigatorConfiguration);

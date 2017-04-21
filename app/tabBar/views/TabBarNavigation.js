@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // React
 import React from 'react'
@@ -14,12 +14,12 @@ const mapStateToProps = (state) => {
  return {
   navigationState: state.tabBar,
   }
-}
+};
 
 class TabBarNavigation extends React.Component {
 
   render(){
-    const { dispatch, navigationState } = this.props
+    const { dispatch, navigationState } = this.props;
     return (
       <TabBar
         navigation={

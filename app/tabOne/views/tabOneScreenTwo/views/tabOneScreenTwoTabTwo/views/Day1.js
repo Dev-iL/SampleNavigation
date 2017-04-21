@@ -1,9 +1,9 @@
 "use strict";
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text } from "react-native";
 export default class Day1 extends React.Component {
   static navigationOptions = {
-    tabBarLbel: "Day 1"
+    tabBarLabel: "Day 1"
   };
 
   render() {

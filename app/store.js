@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Redux
 import { applyMiddleware, combineReducers, createStore } from 'redux'
@@ -12,14 +12,14 @@ import { NavigatorTabTwo } from './tabTwo/navigationConfiguration'
 import { NavigatorTabThree } from './tabThree/navigationConfiguration'
 import { NavigatorTabFour } from './tabFour/navigationConfiguration'
 
-import { TabBar, tabBarReducer } from './tabBar/navigationConfiguration'
+import { tabBarReducer } from './tabBar/navigationConfiguration'
 
 import { StackRoot } from './stackRoot/navigationConfiguration'
 
 // Middleware
 const middleware = () => {
   return applyMiddleware(createLogger({predicate: (getState, action) => __DEV__}))
-}
+};
 
 export default createStore(
   combineReducers({

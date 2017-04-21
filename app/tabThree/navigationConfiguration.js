@@ -11,11 +11,11 @@ const routeConfiguration = {
   TabThreeScreenTwo: { screen: TabThreeScreenTwo },
   TabThreeScreenThree: { screen: TabThreeScreenThree },
 
-}
+};
 // going to disable the header for now
 const stackNavigatorConfiguration = {
   headerMode: 'none',
   initialRoute: 'TabThreeScreenOne'
-}
+};
 
-export const NavigatorTabThree = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
+export const NavigatorTabThree = StackNavigator(routeConfiguration,stackNavigatorConfiguration);

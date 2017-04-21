@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { StackNavigator } from 'react-navigation'
 
@@ -9,12 +9,12 @@ import TabFourScreenTwo from './views/TabFourScreenTwo'
 const routeConfiguration = {
   TabFourScreenOne: { screen: TabFourScreenOne },
   TabFourScreenTwo: { screen: TabFourScreenTwo },
-}
+};
 // going to disable the header for now
 
 const stackNavigatorConfiguration = {
   headerMode: 'none',
   initialRoute: 'TabFourScreenOne'
-}
+};
 
-export const NavigatorTabFour = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
+export const NavigatorTabFour = StackNavigator(routeConfiguration,stackNavigatorConfiguration);

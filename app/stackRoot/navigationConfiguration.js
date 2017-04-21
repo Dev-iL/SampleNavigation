@@ -23,7 +23,7 @@ const stackNavigatorConfiguration = {
     },
   },
   initialRoute: 'StackRootLoading'
-}
+};
 
 // const MultiNavigator = (routeConfigs, stackNavigatorConfiguration) => {
 //   const modalNavigatorRoutes = {};
@@ -34,4 +34,4 @@ const stackNavigatorConfiguration = {
 //   return StackNavigator(modalNavigatorRoutes, {...stackNavigatorConfiguration, mode: 'modal'});
 // };
 
-export const StackRoot = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
+export const StackRoot = StackNavigator(routeConfiguration,stackNavigatorConfiguration);
