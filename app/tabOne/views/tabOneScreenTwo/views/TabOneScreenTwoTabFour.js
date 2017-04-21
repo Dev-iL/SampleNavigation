@@ -1,10 +1,10 @@
 "use strict";
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-export default class TabOneScreenTwoTabThree extends React.Component {
+export default class TabOneScreenTwoTabFour extends React.Component {
   static navigationOptions = {
     tabBar: {
-      label: "Cat"
+      label: "Fox"
     }
   };
 
@@ -13,12 +13,12 @@ export default class TabOneScreenTwoTabThree extends React.Component {
       <View
         style={{
           flex: 1,
-          backgroundColor: "green",
+          backgroundColor: "#FFD700",
           alignItems: "center",
           justifyContent: "center"
         }}
       >
-        <Text>{"Tab One Screen Two Tab Three"}</Text>
+        <Text>{"Tab One Screen Two Tab Four"}</Text>
       </View>
     );
   }

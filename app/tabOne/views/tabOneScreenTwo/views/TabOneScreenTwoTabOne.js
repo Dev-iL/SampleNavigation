@@ -7,11 +7,7 @@ export default class TabOneScreenTwoTabOne extends React.Component {
       label: "Dog"
     }
   };
-
-  // componentDidMount() {
-  //   console.log("Hi there");
-  // }
-
+  
   render() {
     return (
       <View

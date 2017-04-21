@@ -24,6 +24,7 @@ const tabNavigatorConfiguration = {
   initialRoute: 'Day1',
   tabBarComponent: TabView.TabBarTop,
   tabBarPosition: 'top',
+  swipeEnabled: true,
   // backBehavior: 'none',
 }
 

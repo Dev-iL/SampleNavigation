@@ -33,7 +33,7 @@ class TabOneScreenTwoNavigation extends React.Component {
           size={20}
           name={"eye"}
           color={"#FF1493"}
-          style={{ marginRight: 5 }}
+          style={{ marginRight: 8 }}
         />
       ),
       left: (
@@ -41,7 +41,7 @@ class TabOneScreenTwoNavigation extends React.Component {
           size={20}
           name={"flask"}
           color={"#483D8B"}
-          style={{ marginLeft: 5 }}
+          style={{ marginLeft: 8 }}
         />
       )
     }
