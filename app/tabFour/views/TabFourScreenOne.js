@@ -12,14 +12,14 @@ export default class TabFourScreenOne extends React.Component {
       }}>
         <Text>{ 'Tab Four Screen One' }</Text>
         <TouchableOpacity
-          onPress={ () => this.props.navigation.navigate('TabFourScreenTwo') }
+          onPress={ () => this.props.navigation.navigate('StackRootModal') }
           style={{
             padding:20,
             borderRadius:20,
             backgroundColor:'blue',
             marginTop:20
           }}>
-          <Text>{'Go to next screen this tab'}</Text>
+          <Text>{'Open Modal'}</Text>
         </TouchableOpacity>
 
       </View>
