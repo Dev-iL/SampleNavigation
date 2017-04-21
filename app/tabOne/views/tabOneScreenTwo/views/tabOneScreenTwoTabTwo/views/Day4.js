@@ -3,9 +3,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 export default class Day4 extends React.Component {
   static navigationOptions = {
-    tabBar: {
-      label: "Day 4"
-    }
+    tabBarLbel: "Day 4"
   };
 
   render() {

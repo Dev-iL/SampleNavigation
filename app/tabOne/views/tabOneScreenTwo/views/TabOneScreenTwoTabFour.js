@@ -3,9 +3,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 export default class TabOneScreenTwoTabFour extends React.Component {
   static navigationOptions = {
-    tabBar: {
-      label: "Fox"
-    }
+    tabBarLabel: "Fox"
   };
 
   render() {

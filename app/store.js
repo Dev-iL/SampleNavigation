@@ -2,7 +2,7 @@
 
 // Redux
 import { applyMiddleware, combineReducers, createStore } from 'redux'
-import logger from 'redux-logger'
+import {createLogger} from "redux-logger";
 
 // Navigation
 import { NavigatorTabOneStack } from './tabOne/navigationConfiguration'
@@ -18,7 +18,7 @@ import { StackRoot } from './stackRoot/navigationConfiguration'
 
 // Middleware
 const middleware = () => {
-  return applyMiddleware(logger())
+  return applyMiddleware(createLogger({predicate: (getState, action) => __DEV__}))
 }
 
 export default createStore(

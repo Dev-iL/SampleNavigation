@@ -17,18 +17,16 @@ const mapStateToProps = (state) => {
  return {
     navigationState: state.tabOneScreenTwoTabTwo
   }
-}
+};
 
 class TabOneScreenTwoTabTwoNavigation extends React.Component {
   static navigationOptions = {
-    tabBar:{
-      label: 'Days',
+    tabBarLabel: 'Days',
       // icon: ({ tintColor }) => <Icon size={ 20 } name={ 'cogs' } color={ tintColor }/>
-    }
-  }
+  };
 
   render(){
-    const { navigationState, dispatch } = this.props
+    const { navigationState, dispatch } = this.props;
     return (
       <NavigatorTabOneScreenTwoTabTwo
         navigation={

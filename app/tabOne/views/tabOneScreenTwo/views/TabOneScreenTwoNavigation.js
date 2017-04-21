@@ -21,30 +21,28 @@ const mapStateToProps = state => {
 
 class TabOneScreenTwoNavigation extends React.Component {
   static navigationOptions = {
-    header: {
-      visible: true,
-      title: "test",
-      style: {
-        backgroundColor: "#00acec"
-      },
-      tintColor: "#fff",
-      right: (
-        <Icon
-          size={20}
-          name={"eye"}
-          color={"#FF1493"}
-          style={{ marginRight: 8 }}
-        />
-      ),
-      left: (
-        <Icon
-          size={20}
-          name={"flask"}
-          color={"#483D8B"}
-          style={{ marginLeft: 8 }}
-        />
-      )
-    }
+    headerVisible: true,
+    headerTitle: "test",
+    headerStyle: {
+      backgroundColor: "#00acec"
+    },
+    headerTintColor: "#fff",
+    headerRight: (
+      <Icon
+        size={20}
+        name={"eye"}
+        color={"#FF1493"}
+        style={{ marginRight: 8 }}
+      />
+    ),
+    headerLeft: (
+      <Icon
+        size={20}
+        name={"flask"}
+        color={"#483D8B"}
+        style={{ marginLeft: 8 }}
+      />
+    )
   };
 
   render() {

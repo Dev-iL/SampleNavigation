@@ -3,11 +3,9 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 export default class TabOneScreenTwoTabOne extends React.Component {
   static navigationOptions = {
-    tabBar: {
-      label: "Dog"
-    }
+    tabBarLabel: "Dog"
   };
-  
+
   render() {
     return (
       <View

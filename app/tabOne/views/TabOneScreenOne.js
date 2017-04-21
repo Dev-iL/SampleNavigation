@@ -4,14 +4,12 @@ import { View, Text, TouchableOpacity } from 'react-native'
 export default class TabOneScreenOne extends React.Component {
 
   static navigationOptions = {
-    header: {
-      visible: false,
-      backTitle: null,
-      style: {
-        backgroundColor: "#00acec"
-      },
-      tintColor: "#fff"
-    }
+    headerVisible: false,
+    headerBackTitle: null,
+    headerStyle: {
+      backgroundColor: "#00acec"
+    },
+    headerTintColor: "#fff"
   };
 
   render(){

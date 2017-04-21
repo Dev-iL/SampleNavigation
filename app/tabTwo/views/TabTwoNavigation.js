@@ -10,21 +10,20 @@ import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 const mapStateToProps = (state) => {
- return {
-  navigationState: state.tabTwo
+  return {
+    navigationState: state.tabTwo
   }
-}
+};
+
 class TabTwoNavigation extends React.Component {
   static navigationOptions = {
-    tabBar:{
-      label: 'Tab Two',
-      icon: ({ tintColor }) => <Icon size={ 20 } name={ 'taxi' } color={ tintColor }/>
-    }
-  }
+    tabBarLabel: 'Tab Two',
+    tabBarIcon: ({ tintColor }) => <Icon size={ 20 } name={ 'taxi' } color={ tintColor }/>
+  };
 
-render(){
+  render(){
     const { dispatch, navigationState} = this.props
-return (
+    return (
       <NavigatorTabTwo
         navigation={
           addNavigationHelpers({
